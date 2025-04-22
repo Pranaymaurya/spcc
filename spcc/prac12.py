@@ -13,7 +13,6 @@ def const_propagation(code):
         else:
             result.append(line)
     return result
-
 def dead_code_elim(code):
     used, assigned = set(), {}
     for line in code:
